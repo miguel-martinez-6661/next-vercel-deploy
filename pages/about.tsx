@@ -1,3 +1,4 @@
+import { NextPage } from "next";
 import Link from "next/link";
 
 import { DarkLayout } from "../components/layouts/DarkLayout";
@@ -19,7 +20,7 @@ export default function AboutPage() {
   );
 }
 
-AboutPage.getLayout = function getLayout(page) {
+AboutPage.getLayout = function getLayout(page: NextPage) {
   return (
     <MainLayout>
       <DarkLayout>{page}</DarkLayout>
